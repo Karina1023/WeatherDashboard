@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<link rel="stylesheet" href="style.css" />
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+
+     <title>Weather Dashboard</title>
+</head>
+<body>
+    <div class="jumbotron text-white bg-primary">
+        <h1 class="display-4 text-center">Weather Dashboard</h1>
+    </div>
+    <div class="container">
+     <div class="row">
+         <div class="col-md-3">
+             <h4>Search for a city</h4>
+             <form class="form-inline">
+                 <input class="form-control mr-sm-2" id="search-input" type="search" placeholder="Search" aria-label="Search"/>
+                 <button class="btn my-1 my-sm-2 bg-primary text-white" id="search-button" type="submit">
+                     <i class="fas fa-search"></i>
+                 </button>
+             </form>
+             <br>
+             <div class="card" style="">
+                 <ul class="list-group list-group-flush" id="search-history">
+                 </ul>
+             </div>
+         </div>
+         <div class="col-md-9">
+             <div class="card">
+                 <div class="card-body">
+                     <div class="row">
+                         <div class="col-lg-4">
+                             <h6 class="card-title inline-block" id="cityName"></h6>
+
+                         </div>
+                         <div class="col-lg-6">
+                             <img src="" id="icon-w" style="margin-top: -15px;">
+                         </div>
+                     </div>
+                     <p class="card-text">
+                         <h6>Temperature: <span id="temperatureSet"></span></h6>
+                         <h6>Humidity: <span id="humiditySet"></span></h6>
+                         <h6>Wind Speed: <span id="windSet"></span></h6>
+                         <h6>UV Index: <span id="uvSet" class="badge badge-danger"></span></h6>
+                     </p>
+                 </div>
+             </div>
+             <div class="row">
+                 <div class="col-lg-12">
+                     <h3>5:Day Forecast:</h3>
+
+                 </div>
+                 <div class="col-lg-12">
+                     <div class="row" id="forecast">
+
+                     </div>
+                 </div>
+             </div>
+         </div>
+     </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.23.0/moment.min.js"></script>
+
+    <script src="script.js"></script>
+</body>
+</html>
